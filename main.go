@@ -21,19 +21,17 @@ func main() {
 					//Print YouTube link
 					youtubelink := c.Args().Get(0)
 					if youtubelink == "" {
-						return cli.NewExitError("Please provide a YouTube link", 1)
-				    }
+						return cli.Exit("Please provide a YouTube link", 1)
+					}
 					fmt.Println("YouTube link:", youtubelink)
 					return nil
 				},
 			},
 		},
-	
-   	}
+	}
+
 	err := app.Run(os.Args)
 	if err != nil {
 		fmt.Println(err)
 	}
 }
-
-
