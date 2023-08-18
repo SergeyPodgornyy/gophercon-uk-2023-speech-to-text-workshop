@@ -17,10 +17,12 @@ require (
 	github.com/go-audio/wav v1.1.0 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.3+incompatible // indirect
 	github.com/google/pprof v0.0.0-20230811205829-9131a7e9cc17 // indirect
+	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/kkdai/youtube/v2 v2.8.3 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/surrealdb/surrealdb.go v0.2.1 // indirect
 	github.com/vbauerster/mpb/v5 v5.4.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	golang.org/x/sys v0.11.0 // indirect
