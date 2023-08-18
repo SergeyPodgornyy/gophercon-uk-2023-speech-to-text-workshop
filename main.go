@@ -30,6 +30,7 @@ func main() {
 						return err
 					}
 					fmt.Println("Audio file:", audieofilename)
+					audieofilename = "/data/" + audieofilename
 					err = ConvertFile(audieofilename+".mp4", audieofilename+".wav")
 					if err != nil {
 						return err
