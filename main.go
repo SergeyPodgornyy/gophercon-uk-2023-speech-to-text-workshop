@@ -30,11 +30,20 @@ func main() {
 						return err
 					}
 					fmt.Println("Audio file:", audieofilename)
-					audieofilename = "/data/" + audieofilename
+					prefix := "/data/"
+
+					audieofilename = prefix + audieofilename
 					err = ConvertFile(audieofilename+".mp4", audieofilename+".wav")
 					if err != nil {
 						return err
 					}
+					modelfile := prefix + "ggml-tiny.en.bin"
+					transcriptions, err := transcribe(modelfile, audieofilename+".wav")
+					if err != nil {
+						return err
+					}
+					OutputSRT(transcriptions)
+
 					return nil
 				},
 			},
